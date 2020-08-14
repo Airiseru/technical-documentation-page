@@ -1,0 +1,161 @@
+/* Body */
+body {
+  background-color: black;
+  color: white;
+  line-height: 1.5em;
+  margin: 0;
+}
+
+header {
+  padding: 20px;
+  font-size: 30px;
+  color: #ffff1a;
+  margin: 2px;
+  padding: .5em;
+}
+
+/* Nav Bar */
+
+#navbar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  min-width: 150px;
+  width: 300px;
+  height: 100%;
+  border-right: 2px solid rgb(120, 120, 120);
+}
+
+#navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 90%;
+}
+
+#navbar li {
+  width: 100%;
+  border-top: 1px solid rgb(120, 120, 120);
+  font-size: 1.15em;
+  padding: 10px 0;
+  padding-left: 15px;
+  position: relative;
+}
+
+#navbar header {
+  text-align: center;
+  padding: 10px;
+}
+
+#navbar a {
+  cursor: pointer; 
+  text-decoration: none;
+  color: yellow;
+}
+
+.nav-link {
+  text-decoration: none;
+}
+
+/* Main Doc */
+
+#main-doc {
+  position: relative;
+  margin-left: 20em;
+  padding-bottom: 25em;
+  width: 70%;
+}
+
+.main-section {
+  padding: 10px;
+  width: 85%;
+}
+
+.main-section p {
+  /* padding: 10px; */
+  padding-left: 2em;
+  line-height: 1.5em;
+  font-size: 20px;
+}
+
+.main-section ul {
+  padding: 3px 0;
+  padding-left: 5em;
+}
+
+.main-section li {
+  padding: 2px;
+  font-size: 18px;
+}
+
+code {
+  display: block;
+  background-color: #f7f7f7;
+  color: black;
+  white-space: pre;
+  word-break: normal;
+  word-wrap: break-word;
+  border-radius: 5px;
+  line-height: 2;
+  position: relative;
+  margin: 2em 5em;
+  width: 85%;
+}
+
+#reference a {
+  color: red;
+  text-decoration: none;
+}
+
+#reference a:hover {
+  background-color: red;
+  color: white;
+}
+
+@media only screen and (max-width: 950px) {
+  #navbar {
+    position: relative;
+    top: 0;
+    width: auto;
+    height: 250px;
+    z-index: 1;
+  }
+
+  #navbar ul {
+    overflow-y: auto;
+    overflow-x: hidden;
+    border: 2px solid rgb(120, 120, 120);
+  }
+
+  #navbar header {
+    padding: .5em;
+  }
+
+  #main-doc {
+    padding: 0;
+    width: 100%;
+    margin-top: 2em;
+    margin-left: 0;
+  }
+
+  .main-section {
+    margin-left: 2em;
+  }
+
+  code {
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .main-section {
+    margin-left: .5em;
+  }
+
+  code {
+    overflow-x: auto;
+    padding-right: 10px;
+  }
+}
